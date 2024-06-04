@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap");
+
+
+
+body {
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Poppins', sans-serif;
+}
+/* General form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 18px;
+    background: #f9f9f9;
+    border: 1px solid rebeccapurple;
+    border-radius: 25px;
+    box-shadow: 0 0px 6px rgb(48, 1, 255);
+    left      : 50%;
+    top       : 50%;
+    transform : translate(6%, 30px);
+}
+
+/* Style for the input-prepend class */
+.input-prepend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Style for the add-on span */
+.add-on {
+    background: #eee;
+    border: 1px solid blue;
+    border-right: none;
+    padding: 0 10px;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon inside the add-on span */
+.add-on i {
+    font-size: 20px;
+    color: #555;
+
+}
+
+/* Style for the input fields */
+input.span2 {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px 15px 15px 15px;
+    border-left: none;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Focus state for the input fields */
+input.span2:focus {
+    border-color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    .add-on {
+        padding: 0 8px;
+    }
+
+    input.span2 {
+        padding: 8px;
+    }
+}
+
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+
+
+button{
+    background-color: #04aa6d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s; /* Smooth transition effect */
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 50%;
+    left: 70%;
+    transform: translateY(-50%);
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    box-shadow: 0 0px 6px rgb(48, 1, 255);
+    width: 300px;
+    z-index: 1000;
+    }
+    
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+  }
+
+
+
+  .toggle-password {
+    cursor: pointer;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+
